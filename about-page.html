@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="about-page-style.css" />
+  </head>
+  <body>
+    <div class="about-page">
+      <div id="nav-holder"> </div>
+      <div class="header-section">
+        <div class="header-content">
+          <div class="title-subtitle">
+            <div class="text-wrapper-2">Branding | Image making</div>
+            <div class="text-wrapper-3">Howdy, I'm Kioko!</div>
+            <p class="this-is-a-template">
+              This is a template Figma file, turned into code using Anima. I tried to make something kind of fun... One can click "Kioko" at the top of the page to go to the modified "Home" page. <br />
+            </p>
+          </div>
+          <a href="https://www.animaapp.com" target="_blank" rel="noopener noreferrer"
+            ><div class="button"><div class="text-wrapper-4">Contact</div></div></a>
+        </div>
+        <img class="headerimage" src="img/me-picturearch.png" />
+      </div>
+<!---->
+      <div id="footer-holder"></div>
+    </div>
+  </body>
+</html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+$("#nav-holder").replaceWith(data);
+});
+$.get("footer.html", function(data){
+$("#footer-holder").replaceWith(data);
+});
+// $.get("header.html", function(data){
+// $("#header-holder").replaceWith(data);
+// });
+//tried this but alas... as I have commented...
+
+</script>  
